@@ -1,7 +1,7 @@
 # Python Basics
 ## About
-This is just a few basics about Python, mostly for personal reference.</br>
-Nothing impressive, just taking some notes as a result of having gone through Python courses on ACloudGuru.</br>
+This is just a Python snippets and notes, mostly for personal reference.</br>
+Nothing serious, just taking some notes as a result of having gone through Python courses on ACloudGuru.</br>
 If you're interested in checking out the courses for yourself, feel free to check it out, along with ACGs other courses at the link below!</br>
 
 ## References used:
