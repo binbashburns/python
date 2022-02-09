@@ -44,3 +44,86 @@ elif test < 0:
 else:
     print("ZERO")
     
+if True:
+    print("Was true")
+    
+if 1 > 2:
+    print("Was true")
+else:
+    print("Was false")
+    
+name = "Kevin"
+if len(name) >= 6:
+    print("Name is long")
+elif len(name) == 5:
+    print("Name is 5 characters")
+elif len(name) >= 4:
+    print("Name is 4 characters or more")
+else:
+    print("Name is short")
+    
+# Or
+first = ""
+last = "Thompson"
+if first or last:
+    print("The user has a part of a name")
+
+# And
+first = "Bob"
+last = ""
+if first and last:
+    print("The user has a full name")
+else:
+    print("The user does not have a full name")
+    
+# While Loop
+count = 10              # The count starts with a value of 10
+while(count > 0):       # This loop will keep cycling until "count" is below 0
+    print("*" * count)  # This will print a number of asterisks equal to the value of "count"
+    count -= 1          # This will subtract one from the total of "count", per cycle
+    
+count = 0               # The count starts with a value of 0
+while(count < 10):      # This loop will keep cycling until "count" is over 10
+    print("*" * count)  # This will print a number of asterisks equal to the value of "count"
+    count += 1          # This will add one to the total of "count", per cycle
+    
+count = 1
+while count <= 4:
+    print("Loooping")
+    count += 1
+    
+count = 0
+while count < 10:
+    if count % 2 == 0:
+        count += 1
+        continue
+    print(f"We're counting odd numbers: {count}") # Prefix the string with f to interpolate
+    count += 1
+    
+# For Loop
+colors = ['blue','green','red','purple']
+for color in colors:
+    print(color)
+    
+for color in colors:
+    if color == 'blue':     # Blue is first on the list, so it will...
+        continue            # ...get skipped. It will not print, it will start the loop over.
+    elif color == 'red':    # Green is the next color. Red isn't even reached yet before...
+        break
+    print(color)            # Green is printed, because the color was not blue, and it was not red
+    
+point = (2.1, 3.0, 7)       # Note, this is a (tuple), not a [list]
+for value in point:
+    print(value)            # Notice the result of this tuple is very similar to a list
+    
+ages = {'kevin':59, 'bob':40,'kayla':21} # Note, this is a {dictionary}
+for key in ages:
+    print(f"{key} is {ages[key]}")
+
+for letter in "my_string":  # Note, this is a "string"
+    print(letter)
+    
+list_of_points = [(1, 2),(2, 3),(3, 4)]
+for x, y in list_of_points:
+    print(f"x: {x}, y: {y}")
+    
