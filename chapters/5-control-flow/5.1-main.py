@@ -37,36 +37,36 @@ test = 1
 if test > 0:                                # First layer of nesting. Evaluates if the number is > 0
     if test > 10 and test < 15:             # Second layer. Evaluates if the number, that we've identified > 0, is over 15
         print("Positive in range: 10 - 15") # If the result is over zero but under 15, it prints this
-    else:                                   # If the result is over zero and over 15, it prints this
-        print("Positive greater than 15")
+    else:                                   
+        print("Positive greater than 15")   # If the result is over zero and over 15, it prints this
 elif test < 0:
-    print("Negative")
+    print("Negative")                       # If the result is under zero, it prints "Negative"
 else:
-    print("ZERO")
+    print("ZERO")                           # If the result is not any of these, it will print "ZERO"
     
-if True:
+if True:                                    # This will automatically be evaluated as True
+    print("Was true")                       # So it will print True
+    
+if 1 > 2:                                   # One is not more than two, so this will evaluate to...
     print("Was true")
-    
-if 1 > 2:
-    print("Was true")
 else:
-    print("Was false")
+    print("Was false")                      # "Was false"
     
-name = "Kevin"
-if len(name) >= 6:
-    print("Name is long")
-elif len(name) == 5:
-    print("Name is 5 characters")
-elif len(name) >= 4:
-    print("Name is 4 characters or more")
-else:
-    print("Name is short")
+name = "Kevin"                              # Establishes a string variable called "name", whos value is "Kevin"
+if len(name) >= 6:                          # If the amount of letters in "Kevin" is greater than or equal to 6...
+    print("Name is long")                   # The name is long
+elif len(name) == 5:                        # If the name is 5 letters long...
+    print("Name is 5 characters")           # The name is 5 characters
+elif len(name) >= 4:                        # If the amount of letters in "Kevin" is greater than or equal to 4...
+    print("Name is 4 characters or more")   # The name is 4 characters or more
+else:                                       # If the amount of letters in "Kevin" is not equal to any of these
+    print("Name is short")                  # The name is short
     
 # Or
-first = ""
-last = "Thompson"
-if first or last:
-    print("The user has a part of a name")
+first = ""                                  # Establishes a string variable called "first", which is blank
+last = "Thompson"                           # Establishes a string variable called "last", which is equal to "Thompson"
+if first or last:                           # If either of these fields has a value populated...
+    print("The user has a part of a name")  # The user has at least part of a name
 
 # And
 first = "Bob"
