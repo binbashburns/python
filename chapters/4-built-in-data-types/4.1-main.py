@@ -109,3 +109,24 @@ point_3d = point + (4.0,)   # Appends a third value to assume a point in 3D spac
 print(point_3d)             # Prints new value with appended z coordinate
 x,y,z = point_3d            # Assigns values to x, y, and z coordinates respectively
 print(x)                    # Prints x coordinate value (which is 2.0)
+
+# Ranges
+print(range(10))            # This will print the starting and stopping values in the range
+print(list(range(10)))      # This will print every single number between 0 and 9 out
+print(list(range(1,12,2)))  # Start at 1, end at 12. Only output every other number.
+
+### --- Dictionaries --- ###
+# With lists, the indexes are NUMBERED. With Dictionaries, the indexes are NAMED
+input("Time for some NAME-CALLIN' with DICTIONARIES. Press enter to start...")
+ages = {'kevin': 29, 'alex': 29, 'bob': 40} # Kevin is 29, Alex is 29, Bob is 40
+print(ages)                                 # Prints everything that was input
+print(ages['kevin'])                        # Only outputs Kevins age
+ages['keith'] = 29                          # Adds Keith and his weight to the dictionary
+print(ages)                                 # Prints everyones (including Keith's!) weights
+ages['keith'] = 30                          # Oops. We messed Keith up. This changes his age.
+print(ages)                                 # Double check the age is right now.
+del ages['bob']                             # Bob is so old we're not counting his age any more. DELETE!
+print(ages)                                 # Poof, no more Bob
+print(ages.pop('alex'))                     # You can also give Alex a POP
+print(ages)                                 # Poof, Alex is gone. Just like so.
+print(ages.get('kevin'))                    # This only queries someones age, then puts the person back
