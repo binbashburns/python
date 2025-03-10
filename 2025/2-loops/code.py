@@ -53,26 +53,26 @@ print(count)
     
 ####################
 
-# oddList = []
-# num = 0
+oddList = []
+num = 0
 
-# while num < 10:
-#     num += 1
-#     if num % 2 == 0:
-#         continue # continue will skip the rest of the code in the current iteration of the loop and proceed to the next iteration
-#     oddList.append(num)
+while num < 10:
+    num += 1
+    if num % 2 == 0:
+        continue # continue will skip the rest of the code in the current iteration of the loop and proceed to the next iteration
+    oddList.append(num)
 
-# print(f"this is the continue result: {oddList}")
+print(f"this is the continue result: {oddList}")
 
-# ####################
+####################
 
-# oddList = []
-# num = 0
+oddList = []
+num = 0
 
-# while num < 10:
-#     num += 1
-#     if num % 2 == 0:
-#         pass # pass is only a placeholder. It does nothing when it's executed
-#     oddList.append(num)
+while num < 10:
+    num += 1
+    if num % 2 == 0:
+        pass # pass is only a placeholder. It does nothing when it's executed
+    oddList.append(num)
 
-# print(f"this is the pass result: {oddList}")
+print(f"this is the pass result: {oddList}")
