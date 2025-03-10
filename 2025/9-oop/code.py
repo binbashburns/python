@@ -54,16 +54,16 @@ class Dog:
 
     def __init__(self):
         self.name = 'Fido'
-        self.tricks = ['']
+        self.tricks = []
 
     def __str__(self):
-        return f"My dog's name is {self.name}. name can perform the following tricks: {str(self.tricks)}"
+        return f"My dog's name is {self.name}. {self.name} can perform the following tricks: {str(self.tricks)}"
 
     def change_name(self,newName):
         self.name = newName
 
     def new_trick(self,newTrick):
-        self.tricks = self.tricks.append(newTrick)
+        self.tricks.append(newTrick)
 
 test = Dog()
 print(test)
