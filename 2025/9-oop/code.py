@@ -95,8 +95,8 @@
 
 class Chest:
 
-    def __init__(self,items):
-        self.chest = [items]
+    def __init__(self,*items):
+        self.chest = list[items]
 
     def __str__(self):
         return f'Chest: {self.chest}'
@@ -110,5 +110,11 @@ class Chest:
     def empty(self):
         self.chest = []
 
-chest1 = Chest('swords', 'bows', 'daggers') 
+chest1 = Chest('swords', 'bows', 'daggers')
+print(chest1)
+chest1.add('magic spells', 'maps')
+print(chest1)
+chest1.drop('maps','bows')
+print(chest1)
+chest1.empty()
 print(chest1)
