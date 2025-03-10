@@ -36,53 +36,79 @@
 
 # ##########################################
 
-# Build a simple class called Dog.
+# # Build a simple class called Dog.
 
-# The class should initialize every instance of Dog created to start with the following:
-# Attribute 	Value of attribute:
-# name 	Fido
-# tricks 	empty list
+# # The class should initialize every instance of Dog created to start with the following:
+# # Attribute 	Value of attribute:
+# # name 	Fido
+# # tricks 	empty list
 
-# Build a function named change_name that accepts a parameter. The parameter provided will be used to overwrite the dog's initialized name.
+# # Build a function named change_name that accepts a parameter. The parameter provided will be used to overwrite the dog's initialized name.
 
-# Build another function named new_trick that accepts a parameter. The parameter should be appended to the empty list of tricks that each dog is initialized with.
+# # Build another function named new_trick that accepts a parameter. The parameter should be appended to the empty list of tricks that each dog is initialized with.
 
-# Build a conversion to string function (hint: Think of the double underscore) that returns a string in the following format:
-# "My dog's name is {name}. name can perform the following tricks: {tricks}"
+# # Build a conversion to string function (hint: Think of the double underscore) that returns a string in the following format:
+# # "My dog's name is {name}. name can perform the following tricks: {tricks}"
 
-class Dog:
+# class Dog:
 
-    def __init__(self):
-        self.name = 'Fido'
-        self.tricks = []
+#     def __init__(self):
+#         self.name = 'Fido'
+#         self.tricks = []
+
+#     def __str__(self):
+#         return f"My dog's name is {self.name}. {self.name} can perform the following tricks: {str(self.tricks)}"
+
+#     def change_name(self,newName):
+#         self.name = newName
+
+#     def new_trick(self,newTrick):
+#         self.tricks.append(newTrick)
+
+# test = Dog()
+# print(test)
+# test.change_name('Spot')
+# test.new_trick('sit')
+# print(test)
+# test.new_trick('lay down')
+# print(test)
+
+# ##########################################
+
+# class Car:
+
+#     def __init__(self,year,make,model,color,trim,trans):
+#         self.year = year
+#         self.make = make
+#         self.model = model
+#         self.color = color
+#         self.trim = trim
+#         self.trans = trans
+
+#     def __str__(self):
+#         return f'Year: {self.year}\nMake: {self.make}\nModel: {self.model}\nColor: {self.color}\nTrim: {self.trim}\nTransmission: {self.trans}'
+
+# car1 = Car('2024','Honda','Civic','White','EX','Automatic')  
+# print(car1)
+
+# ##########################################
+
+class Chest:
+
+    def __init__(self,items):
+        self.chest = [items]
 
     def __str__(self):
-        return f"My dog's name is {self.name}. {self.name} can perform the following tricks: {str(self.tricks)}"
+        return f'Chest: {self.chest}'
+    
+    def add(self,newItem):
+        self.chest.append(newItem)
 
-    def change_name(self,newName):
-        self.name = newName
+    def drop(self,delItem):
+        self.chest.remove(delItem)
 
-    def new_trick(self,newTrick):
-        self.tricks.append(newTrick)
+    def empty(self):
+        self.chest = []
 
-test = Dog()
-print(test)
-test.change_name('Spot')
-test.new_trick('sit')
-print(test)
-test.new_trick('lay down')
-print(test)
-
-##########################################
-
-
-
-##########################################
-
-
-
-##########################################
-
-
-
-##########################################
+chest1 = Chest('swords', 'bows', 'daggers') 
+print(chest1)
