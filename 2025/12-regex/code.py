@@ -41,16 +41,12 @@ strng = '''(212)555-1234
            (312)555-8765
            '''
 
-pattern = r'+\d\d\d+\d\d\d+\d\d\d\d+'
+# Wildcard-based regex pattern
+pattern = r'.\d{3}\D*\d{3}\D*\d{4}'
 
 matches = re.findall(pattern, strng)
 
-lst = []
-
-for match in matches:
-    lst.append(match)
-
-print(lst)
+print(matches)
 
 ########################################
 
