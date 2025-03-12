@@ -65,7 +65,7 @@ NOTE: If `search()` returned None there will be a runtime error when attempting 
 ```
 import re 
 phone = re.compile(r'(\d\d\d)-\d\d\d-\d\d\d\d')
-match_object = phone.search("The phone numbber is 123-789-7484")
+match_object = phone.search("The phone number is 123-789-7484")
 print(match_object.groups())
 ```
 ## Findall
