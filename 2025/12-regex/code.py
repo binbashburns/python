@@ -17,10 +17,13 @@ strng = '''Bill has an email address Bill@email.com
            Han has an email address Han@yahoo.com
            Jen has an email address Jennifer@yahoo.com
            '''
-lst = re.search(r'.{3}@yahoo\.com', strng)
 
-for i in list:
-    print(i.group())
+pattern = r'\b[A-Za-z]{3}@yahoo\.com\b'
+
+matches = re.findall(pattern, strng)
+
+for match in matches:
+    print(match)
 
 ########################################
 
