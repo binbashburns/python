@@ -46,7 +46,9 @@ pattern = r'.\d{3}\D*\d{3}\D*\d{4}'
 
 matches = re.findall(pattern, strng)
 
-print(matches)
+stripped_matches = [match.strip() for match in matches]
+
+print(stripped_matches)
 
 ########################################
 
